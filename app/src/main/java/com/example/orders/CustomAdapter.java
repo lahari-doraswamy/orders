@@ -25,8 +25,7 @@ public abstract class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.M
         this.context = context;
     }
 
-    public CustomAdapter(Context context, ArrayList<String> stockname, ArrayList<String> network) {
-    }
+
 
     @NonNull
     @Override

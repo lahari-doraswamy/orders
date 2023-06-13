@@ -24,7 +24,7 @@ private ViewPager viewPager;
         vpAdapter.addFragment(new Positions(),"Positions");
         vpAdapter.addFragment(new Gtt(),"GTT");
         viewPager.setAdapter(vpAdapter);
-        int desiredFragmentPosition = 1;
+        int desiredFragmentPosition = 0;
         tabLayout.setScrollPosition(desiredFragmentPosition,0,true);
         viewPager.setCurrentItem(desiredFragmentPosition);
 

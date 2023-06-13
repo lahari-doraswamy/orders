@@ -50,7 +50,8 @@ ArrayList<String> network = new ArrayList<>();
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        CustomAdapter customAdapter = new CustomAdapter(getContext(), stockname, network) {
+        CustomAdapter customAdapter = new CustomAdapter(stockname, network,getContext()) {
+
             @Override
             public int getItemCount() {
                 return 0;
