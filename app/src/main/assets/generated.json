@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "stockname": "IDEA",
+      "network": "Vodafone Idea Limited",
+      "date": 19.12,
+      "status": "done"
+    },
+    {
+      "stockname": "idea",
+      "network": "Vodafone Idea Limited",
+      "date": 19.12,
+      "status": "done"
+    }
+  ]
+}
