@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder>{
+public abstract class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder>{
     ArrayList<String> stockname;
     ArrayList<String> network;
     Context context;
@@ -52,10 +52,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
     }
 
-    @Override
-    public int getItemCount() {
-        return stockname.size();
-    }
+
     public class MyViewHolder extends RecyclerView.ViewHolder{
         TextView stockname,network;
 

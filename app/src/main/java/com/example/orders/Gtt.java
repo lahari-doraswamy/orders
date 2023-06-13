@@ -50,7 +50,12 @@ ArrayList<String> network = new ArrayList<>();
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        CustomAdapter customAdapter = new CustomAdapter(getContext(),stockname,network);
+        CustomAdapter customAdapter = new CustomAdapter(getContext(), stockname, network) {
+            @Override
+            public int getItemCount() {
+                return 0;
+            }
+        };
         recyclerView.setAdapter(customAdapter);
         return view;
     }
