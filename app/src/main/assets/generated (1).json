@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "stockname": "IDEA",
+      "network": "Vodafone Idea Limited",
+      "date": 19.12,
+      "status": "done"
+    },
+    {
+      "stockname": "IDEA",
+      "network": "Vodafone Idea Limited",
+      "date": 19.12,
+      "status": "done"
+    },
+    {
+      "stockname": "IDEA",
+      "network": "Vodafone Idea Limited",
+      "date": 19.12,
+      "status": "done"
+    },
+    {
+      "stockname": "TCS",
+      "network": "Tata Consultancy Serv",
+      "date": 19.12,
+      "status": "done"
+    },
+    {
+      "stockname": "Reliance",
+      "network": "Reliance Industries Ltd",
+      "date": 19.12,
+      "status": "done"
+    }
+  ]
+}

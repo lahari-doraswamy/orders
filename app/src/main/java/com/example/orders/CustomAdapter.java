@@ -12,9 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public abstract class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder>{
+public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder>{
     ArrayList<String> stockname;
     ArrayList<String> network;
     Context context;
@@ -24,9 +23,6 @@ public abstract class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.M
         this.network = network;
         this.context = context;
     }
-
-
-
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -41,16 +37,11 @@ public abstract class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.M
         holder.stockname.setText(stockname.get(position));
         holder.network.setText(network.get(position));
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(context,stockname.get(position), Toast.LENGTH_SHORT).show();
-
-            }
-        });
-
     }
-
+    @Override
+    public int getItemCount() {
+        return stockname.size();
+    }
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
         TextView stockname,network;

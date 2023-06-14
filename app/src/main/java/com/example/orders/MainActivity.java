@@ -30,6 +30,4 @@ private ViewPager viewPager;
 
 
     }
-
-
 }
